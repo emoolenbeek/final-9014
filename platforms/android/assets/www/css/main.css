@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[data-role="page"] {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+[data-role="page"].active {
+    display: block;
+    z-index: 20;
+    color: black;
+}
+
+h1 {
+    padding: 1rem 2rem;
+    font-size: 4rem;
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: lightslategrey;
+    z-index: 30;
+}
+
+nav a {
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+    width: 48.9%;
+    text-align: center;
+    padding-top: 1em;
+}
+nav a:nth-child(2n) {
+    float: right;
+}
+
+ul div {
+    align-content: center;
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 3px solid black;
+}
+
+ul div:nth-child(-n+1) {
+    border-top: 3px solid black;
+}
+
+.date {
+    font-size: 2rem;
+    background-color: grey;
+    box-shadow: 5px 5px 5px black;
+    padding-left: 1vw;
+    width: 60%;
+}
+
+.team {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.score {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    font-family: Arial, sans-serif;
+    font-size: 1.75rem;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg th {
+    font-family: Arial, sans-serif;
+    font-size: 1.75rem;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    background-color: grey;
+}
+
+.tg .tg-baqh {
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.games {
+    text-align: center;
+    font-size: 3rem;
+    background-color: lightgray;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1vh;
+    border-radius: 24px;
+}
+
+img {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+}
+
+.icon {
+    display: inline-block;
+}
+
+ul div div{
+    border-bottom: none;
+}
